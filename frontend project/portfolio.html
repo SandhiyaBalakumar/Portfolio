@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title> Personal Portfolio </title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Permanent+Marker&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/018e49fac1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <nav class="navbar-brand" href="#">Portfolio</nav>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()" style="color: white;"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()" style="color: white;"></i>
+      </nav>
+      <div class="header-text">
+        <p>Full Stack Developer <b>Python</b> </p>
+        <h1>Hi,I'm <span>Sandhiya</span><br> From Udumalpet</h1>
+      </div>
+    </div>
+  </div>
+
+  /*-------about-------*/
+
+
+  <div id="about">
+    <div id="container">
+      <div class="row">
+        <div class="about col-sm-6">
+          <img src="Portfolio+4.png">
+        </div>
+        <div class="about col-sm-6">
+          <h1 class="sub-title">About Me</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nam, blanditiis accusamus qui ad id quos excepturi atque, reiciendis sapiente architecto perspiciatis nemo necessitatibus dolorum nostrum, quis obcaecati at aliquid.</p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links"onclick="opentab('experience')">Experience</p>
+          <p class="tab-links"onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>HTML/CSS/BOOTSTRAP/JS</span><br>Front-end Development</li>
+            <li><span>Django/Python</span><br>Back-end Development</li>
+            <li><span>Sqlite</span><br>Database Management System</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>DEC-2023 to Current</span><br>Internship at <b>Appin Technology</b></li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2023</span><br><b>B.Com</b> at Sri G.V.G Visalakshi college for Women,Udumalpet</b></li>
+          </ul>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  /*--------services-------*/
+
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-brands fa-html5"></i>
+          <h2>Front-end Development</h2>
+          <p>Using HTML,Javascript and CSS to bring concepts to life.Developing and maintaining the user interface.Creating tools that improves site interaction regardless the browser.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-python"></i>
+          <h2>Back-end Development</h2>
+          <p>An aspect of web or mobile app Development that is responsible for executing server side processing to fulfill user frequests ans enable apps to function.It involves utilizing programming languages to manage data storage,server logic,and overall architecture of the application.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-database"></i>
+          <h2>Database</h2>
+          <p>A database is an organised collection of data electronically stored and managed form a computer system.This system is used to hold large sets of data in a structured manner and make them easily to accessible to authorized users.</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  /*--------my work-------*/
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="image1.jpg">
+          <div class="layer">
+            <h3>Portfolio Website</h3>
+            <p>It's my personal portfolio website.It's full of my information.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="image2.jpg">
+          <div class="layer">
+            <h3>Online shopping</h3>
+            <p>It's online shopping website based on food.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="image3.jpg" >
+          <div class="layer">
+            <h3>Visited Website</h3>
+            <p>We can visited the website to gather information about the product.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+  /*--------contact-------*/
+
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left col-sm-6">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>sandhiyasubramani34@gmail.com</p>
+        <p><i class="fa-solid fa-square-phone"></i>97879 77323</p>
+        <div class="social-icons">
+          <a href="https://whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="Sandhiya Resume.pdf"download  class="btn btn2">Download Cv</a>
+      </div>
+      <div class="contact-right col-sm-6">
+        <form>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<script>
+  var tablinks=document.getElementsByClassName("tab-links");
+  var tabcontents=document.getElementsByClassName("tab-contents");
+
+  function opentab( tabname){
+      for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+  }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+<script>
+  var sidemenu=document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right="0";
+  }
+
+  
+  function closemenu(){
+    sidemenu.style.right="-200px";
+  }
+</script>
+</body>
+</html>
